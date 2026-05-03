@@ -117,10 +117,10 @@ void printPath(pair<int,int> exitcell,
 // STUDENTS IMPLEMENT DFS HERE
 // Add arguments, return type, and logic
 // ----------------------------------------------------------
-// bool dfs(……) {
-//     // Your code here
+ bool dfs(vector<vector<int>>& parent_r, vector<vector<int>>& parent_c){
+// Your code here
 
-// }
+}
 
 
 // ----------------------------------------------------------
