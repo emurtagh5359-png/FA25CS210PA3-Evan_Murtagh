@@ -17,13 +17,13 @@
 * Final resolution: I added a space between the two >. This got rid of the error and made the code look a lot cleaner. 
 
 ## Entry 3
-* The issue encountered:
+* The issue encountered: I realized that for the first two arguments of dfs, I was using ent_r and ent_c, which made sense for the first call, but then after r and c move, they are not at the entrance anymore.
 
-* Error messages or symptoms:
+* Error messages or symptoms: There was not really an error, just an incorrect name for two parameters, once dfs is called recursively, it would not make sense for r and c to be called ent_r and ent_c.
 
-* Attempts made:
+* Attempts made: I decided to go with changing those arguments to just r and c
 
-* Final resolution:
+* Final resolution: I changed the arguments ent_r and ent_c to just r and c.
 
 ## Entry 4
 * The issue encountered:
