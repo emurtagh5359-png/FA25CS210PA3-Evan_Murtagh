@@ -44,10 +44,10 @@
 * Final resolution: for the first error, I just had to add "make_pair," and the red line went away. For the second and third errors, I had to do the same thing, but it was a different error message.
 
 ## Entry 6
-* The issue encountered:
+* The issue encountered: After finishing the program, I input 5 5 for a 5X5 grid, and it gave me a 5X5 grid that had a path. However, it said no path exists.
 
-* Error messages or symptoms:
+* Error messages or symptoms: The program output "no path exists" when there was a path that existed.
 
-* Attempts made:
+* Attempts made: I figured out that it was because returning true was never happening, and that when the dfs was being called recursively, it had to be inside an if statement that would return true.
 
-* Final resolution:
+* Final resolution: I put the recursive dfs in an if statement that would return true. This made it so that when the function found an exit, it would return true. 

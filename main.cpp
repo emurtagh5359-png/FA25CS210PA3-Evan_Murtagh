@@ -137,7 +137,9 @@ bool dfs(int r, int c, const vector<vector<int> >& maze, vector<vector<bool> >& 
             parent_r[next_r][next_c] = r;
             parent_c[next_r][next_c] = c;
 
-            dfs(next_r, next_c, maze, visited, parent_r, parent_c, exit_r, exit_c);
+            if (dfs(next_r, next_c, maze, visited, parent_r, parent_c, exit_r, exit_c)) {
+                return true;
+            }
         }
     }
     return false;
