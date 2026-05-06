@@ -125,7 +125,12 @@ bool dfs(int r, int c, const vector<vector<int> >& maze, vector<vector<bool> >& 
     visited[r][c] = true;
 
     if (r == exit_r && c == exit_c) {
+        return true;
+    }
 
+    for (int i = 0; i <= 4; i++) {
+        int next_r = r + dr[i];
+        int next_c = c + dc[i];
     }
 }
 
